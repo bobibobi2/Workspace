@@ -1,0 +1,26 @@
+/*
+ * OperationsWithFiles.h
+ *
+ *  Created on: May 16, 2017
+ *      Author: mediff
+ */
+
+#ifndef OPERATIONSWITHFILES_H_
+#define OPERATIONSWITHFILES_H_
+#include <fstream>
+#include "Tools.h"
+using namespace std;
+
+class OperationsWithFiles {
+public:
+	int enterChoice();
+	void createTextFile(fstream&);
+	void updateRecord(fstream&);
+	void newRecord(fstream&);
+	void deleteRecord(fstream&);
+	void outputLine(ostream&,const Tools&);
+	OperationsWithFiles();
+	virtual ~OperationsWithFiles();
+};
+
+#endif /* OPERATIONSWITHFILES_H_ */
